@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/layout_actionbar_detail" />
+
+    <include
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_layout"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tabLayout"
+        android:layout_below="@id/actionbar"
+        android:layout_margin="@dimen/small_spacer"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/activity_article_header_include" />
+
+        <!-- Layout to split the article view horizontally -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:id="@+id/articleDetailLayout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <!--
+                The left side of the article is a LinearLayout that gets filled
+                with fragments for the different kinds of things that can
+                be displayed
+                -->
+
+                <LinearLayout
+                    android:id="@+id/leftArticlePane"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/small_spacer" >
+
+                    <!--
+                    <fragment
+                        android:id="@+id/textFragment"
+                        android:name="com.your.name.fragments.article.Text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    -->
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.your.name.fragments.Navigationbar"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

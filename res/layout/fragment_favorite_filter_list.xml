@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/filter_seperator"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/background_dark"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer" >
+
+                <RadioButton
+                    android:id="@+id/radioAllFavorites"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacer"
+                    android:checked="true"
+                    android:textColor="@color/text_on_body" />
+
+                <RadioButton
+                    android:id="@+id/radioOwnArticles"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacer"
+                    android:textColor="@color/text_on_body" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/favoriteGroupsText"
+                style="@style/article_text_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer" >
+
+                <requestFocus />
+            </TextView>
+
+            <TextView
+                android:id="@+id/allFavoriteGroupsText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer"
+                android:background="@drawable/navigation_selector"
+                android:clickable="true"
+                android:padding="@dimen/small_spacer"
+                android:textColor="@color/text_on_background_dark" />
+
+            <TextView
+                android:id="@+id/allUnassignedFavoritesText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer"
+                android:background="@drawable/navigation_selector"
+                android:clickable="true"
+                android:padding="@dimen/small_spacer"
+                android:textColor="@color/text_on_background_dark" />
+
+            <TextView
+                android:id="@+id/allLocaleArticle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer"
+                android:background="@drawable/navigation_selector"
+                android:clickable="true"
+                android:padding="@dimen/small_spacer"
+                android:text="Artikel in Bearbeitung"
+                android:textColor="@color/text_on_background_dark" />
+
+            <LinearLayout
+                android:id="@+id/filterList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_spacer"
+                android:layout_marginTop="@dimen/small_spacer"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/newCollectionText"
+                style="@style/article_text_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/addGroupNameEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/background_dark_highlighted"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="@dimen/small_spacer"
+                    android:textColor="@color/text_on_background_dark" />
+
+                <TextView
+                    android:id="@+id/addGroupButton"
+                    style="@style/article_text_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/navigation_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/medium_spacer"
+                    android:paddingRight="@dimen/medium_spacer"
+                    android:text="+"
+                    android:textColor="@color/text_on_background_dark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

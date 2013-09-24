@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fragment_videoplayer_arrow_nav_filling" />
+
+    <TextView
+        android:id="@+id/videoplayerTitle"
+        style="@style/title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textColor="@color/text_color_video_title" />
+
+    <TextView
+        android:id="@+id/videoplayerDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="3"
+        android:paddingLeft="@dimen/small_spacer"
+        android:paddingRight="@dimen/small_spacer"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/black"
+        android:scaleType="centerInside"
+        android:scrollbars="none" />
+
+</LinearLayout>

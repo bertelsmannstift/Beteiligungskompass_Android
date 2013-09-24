@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/article_text_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/small_spacer"
+        android:layout_marginTop="@dimen/small_spacer"
+        android:background="@drawable/article_text_divider_line" />
+
+    <!-- STUDIES -->
+
+    <TextView
+        android:id="@+id/studiesTitle"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/studiesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <!-- EXPERTS -->
+
+    <TextView
+        android:id="@+id/expertsTitle"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/expertsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <!-- METHODS -->
+
+    <TextView
+        android:id="@+id/methodsTitle"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/methodsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <!-- EVENTS -->
+
+    <TextView
+        android:id="@+id/eventsTitle"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/eventsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <!-- QAs -->
+
+    <TextView
+        android:id="@+id/qasTitle"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/qasList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <!-- NEWS -->
+
+    <TextView
+        android:id="@+id/newsTitle"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/newsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/vertical_spacer_medium" />
+
+</LinearLayout>

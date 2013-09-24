@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_sync" >
+
+    <ImageView
+        android:id="@+id/syncIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_syncscreen_sync" />
+
+    <TextView
+        android:id="@+id/syncText"
+        style="@style/article_text_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syncIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/medium_spacer"
+        android:text="Syncing..."
+        android:textColor="@color/text_on_background_dark" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syncText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/medium_spacer" />
+
+</RelativeLayout>

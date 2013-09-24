@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+	<!--  
+    <RelativeLayout
+        android:id="@+id/aboutLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:onClick="onAboutClicked"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tab_selector"
+        android:clickable="true"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/aboutNameimage"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/small_spacer"
+            android:src="@drawable/ic_grundlagen" />
+
+        <TextView
+            android:id="@+id/aboutName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/medium_spacer"
+            android:layout_toRightOf="@+id/aboutNameimage"
+            android:padding="@dimen/small_spacer"
+            android:text="Grundlagen"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/aboutDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutName"
+            android:layout_toRightOf="@id/aboutNameimage"
+            android:ellipsize="end"
+            android:lines="3"
+            android:padding="@dimen/small_spacer"
+            android:text="INSERT TEXT LABEL HERE"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+	-->
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/background_yellow_rounded_corner_top"
+        android:clickable="true"
+        android:onClick="onPlanningClicked"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/small_spacer"
+            android:src="@drawable/dashboard_icon_planning"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textViewOwnTransaction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/medium_spacer"
+            android:layout_toRightOf="@+id/icon"
+            android:padding="@dimen/small_spacer"
+            android:textColor="@color/text_on_interferer"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewOwnTransaction"
+            android:layout_toRightOf="@id/icon"
+            android:ellipsize="end"
+            android:lines="3"
+            android:padding="@dimen/small_spacer"
+            android:text="Hinweise und Empfehlungen zur Beteiligung der Bürger"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

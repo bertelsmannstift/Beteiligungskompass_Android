@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/background_dark_highlighted"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/arrowLeft"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:background="@color/background_dark"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/small_spacer"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_arr_vid_left" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/amountVideoTextView"
+        style="@style/article_sidebar_title_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="0dp"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/arrowRight"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:background="@color/background_dark" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/small_spacer"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_arr_vid_right" />
+    </LinearLayout>
+
+</LinearLayout>

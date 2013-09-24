@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_dark_highlighted"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:onClick="onPreviousArticleClicked" >
+
+        <ImageView
+            android:id="@+id/previousArticle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/small_spacer"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_arr_left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/article_header_title_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="Das ist aber ein langer titel, mal gucken was am Ende so sein wird. OH HAPPY DAY OH HAPPY DAy"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/articleInfoView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Author and other info here"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:onClick="onNextArticleClicked" >
+
+        <ImageView
+            android:id="@+id/nextArticle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:onClick="onNextArticleClicked"
+            android:padding="@dimen/small_spacer"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_arr_right" />
+    </LinearLayout>
+
+</LinearLayout>

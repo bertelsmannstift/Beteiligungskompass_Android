@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!--  
+    <RelativeLayout
+        android:id="@+id/aboutLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:onClick="onAboutClicked"
+        android:background="@drawable/tab_selector"
+        android:clickable="true"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/aboutNameimage"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/small_spacer"
+            android:src="@drawable/ic_grundlagen" />
+
+        <TextView
+            android:id="@+id/aboutName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/aboutNameimage"
+            android:paddingLeft="@dimen/small_spacer"
+            android:paddingRight="@dimen/small_spacer"
+            android:text="Grundlagen"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/aboutDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutName"
+            android:layout_marginLeft="@dimen/medium_spacer"
+            android:layout_toRightOf="@+id/aboutNameimage"
+            android:paddingBottom="@dimen/small_spacer"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_spacer"
+            android:visibility="gone" />
+    </RelativeLayout>
+-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/background_yellow_rounded_corner_top"
+        android:clickable="true"
+        android:onClick="onPlanningClicked"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/small_spacer"
+            android:src="@drawable/dashboard_icon_planning" />
+
+        <TextView
+            android:id="@+id/textViewOwnTransaction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon"
+            android:paddingLeft="@dimen/small_spacer"
+            android:paddingRight="@dimen/small_spacer"
+            android:textColor="@color/text_on_interferer" />
+
+        <TextView
+            android:id="@+id/ownDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewOwnTransaction"
+            android:layout_marginLeft="@dimen/medium_spacer"
+            android:layout_toRightOf="@+id/icon"
+            android:paddingBottom="@dimen/small_spacer"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_spacer"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+	<item
+        android:id="@+id/icLogin"
+        android:icon="@drawable/icon_subnavi_login"
+        android:title="Anmelden"/>
+    
+	<item
+        android:id="@+id/icmyData"
+        android:icon="@drawable/icon_subnavi_meinedaten"/>
+    -->
+    
+    <item
+        android:id="@+id/icInfo"
+        android:icon="@drawable/icon_subnavi_info_kontakt"/>
+    
+    <!--
+   	<item
+        android:id="@+id/icaddArticle"
+        android:icon="@drawable/icon_tabbar_artikel"
+        android:title="@string/myArticle"/>
+    -->
+    
+    <item
+        android:id="@+id/icontext"
+        android:icon="@drawable/icon_tabbar_share"/>
+
+</menu>

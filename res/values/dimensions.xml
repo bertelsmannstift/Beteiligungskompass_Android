@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- some names for commonly used spacing dimensions -->
+    <dimen name="half_small_spacer">3dp</dimen>
+    <dimen name="small_spacer">5dp</dimen>
+    <dimen name="medium_spacer">10dp</dimen>
+    <dimen name="large_spacer">20dp</dimen>
+
+    <!-- some names for commonly used icon sizes -->
+
+</resources>

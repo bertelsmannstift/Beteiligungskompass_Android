@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/new_article_title_description" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventDescription"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Beschreibung" />
+
+                <EditText
+                    android:id="@+id/NewArticleEVENTDescription"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventMaxPart"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Max. Teilnehmerzahl" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventMaxPart"
+                    android:inputType="number"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventParticipation"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Teilnahmemöglichkeit" />
+
+                <Spinner
+                    android:id="@+id/NewArticleEventParticipation"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventFee"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Teilnahmegebühr" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventFee"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventContactPerson"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Ansprechpartner" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventContactPerson"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventEmail"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="E-Mail" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventEmail"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventPhone"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Telefon" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventPhone"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventFax"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Fax" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventFax"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventLink"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Link" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventLink"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="textUri"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventdeadline"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Anmeldeschluss" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventDeadline"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="date"
+                    android:background="@drawable/edittext_round_corners"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/next_step_button" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+
+The file synced_database.sqlite has been renamed to synced_database.mp3 to trick the android packager into thinking it's already compressed.
+
+

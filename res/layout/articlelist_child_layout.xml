@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="250dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/small_spacer" >
+
+    <ImageView
+        android:id="@+id/articleImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_dpd_box" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_spacer"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/articleTitle"
+            style="@style/articlelist_child_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="@dimen/small_spacer"
+            android:layout_marginTop="3dp"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/background_dark" />
+
+        <LinearLayout
+            android:id="@+id/indicatorLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/articleTitle"
+            android:orientation="horizontal" >
+
+            <!-- The following item gets disabled programmatically for small devices, see ArticleList.java -->
+
+            <ImageView
+                android:id="@+id/articleVideo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/small_spacer"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_video" />
+
+            <!-- The following item gets disabled programmatically for small devices, see ArticleList.java -->
+
+            <ImageView
+                android:id="@+id/articleDownload"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/medium_spacer"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_downloads" />
+
+            <!-- The following item gets disabled programmatically for small devices, see ArticleList.java -->
+
+            <ImageView
+                android:id="@+id/articlePin"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/medium_spacer"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/articleSubTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/articleTitle"
+                android:layout_marginRight="@dimen/small_spacer"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/articlePin"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Article Subtitle"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/articleDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indicatorLayout"
+            android:layout_marginRight="@dimen/small_spacer"
+            android:ellipsize="end"
+            android:lines="3"
+            android:paddingBottom="@dimen/small_spacer"
+            android:paddingTop="0dp"
+            android:text="Article Description\nArticleDescription\nBLA"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_spacer" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/articleFavoritLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <!--
+        <ImageView
+            android:id="@+id/articleMyArticle"
+            android:layout_width="20dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/medium_spacer"
+            android:layout_weight="0"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_flag"
+            android:visibility="visible" />
+        -->
+
+        <ImageView
+            android:id="@+id/articleFavorit"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/medium_spacer"
+            android:layout_weight="0"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_fav_blue" />
+    </LinearLayout>
+
+</LinearLayout>

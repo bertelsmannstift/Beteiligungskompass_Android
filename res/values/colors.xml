@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- the palette of general app colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="text_color_video_title">#0D4E86</color>
+    <color name="background_content">@android:color/white</color>
+    <color name="background_dark">#0c4c86</color>
+    <color name="background_dark_highlighted">#5e7fa9</color>
+    <color name="background_collection_text">#CCCCCC</color>
+    <color name="background_interferer">#f5b52d</color>
+    <color name="highlighted_background_interferer">#fada96</color>
+    <color name="background_linked_articles">#efebdf</color>
+    <color name="text_on_background_dark">@android:color/white</color>
+    <color name="text_on_background_dark_highlighted">@android:color/white</color>
+    <color name="text_on_body">@android:color/black</color>
+    <color name="text_on_interferer">@android:color/white</color>
+    <color name="background_sync">#192f4c</color>
+    <color name="separator">@android:color/black</color>
+
+    <!-- tabs color -->
+    <color name="tab">@color/background_dark</color>
+    <color name="selected_tab">@color/background_dark_highlighted</color>
+
+    <!-- Actionbar colors -->
+    <color name="actionbar_text">#274884</color>
+
+    <!-- fragment dashboard navigation colors -->
+    <color name="background_navigation_header">@color/background_interferer</color>
+    <color name="text_navigation_header">@color/text_on_interferer</color>
+
+    <!-- fragment dashboard videoplayer colors -->
+    <color name="vid_navigation_bg">#5e7fa9</color>
+
+    <!-- activity articlelist -->
+    <color name="group_background">#93b5c9</color>
+    <color name="child_background">#FFFFFF</color>
+
+</resources>

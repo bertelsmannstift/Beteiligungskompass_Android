@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewleftbarStep1"
+            style="@style/newarticle_leftbar_text_style"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="50dp"
+            android:text="Titel / Beschreibung" />
+
+        <include
+            android:id="@+id/iconStep1"
+            layout="@layout/layout_finish_imageview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewleftbarStep2"
+            style="@style/newarticle_leftbar_text_style"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="50dp"
+            android:text="Weitere Informationen" />
+
+        <include
+            android:id="@+id/iconStep2"
+            layout="@layout/layout_finish_imageview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewleftbarStep3"
+            style="@style/newarticle_leftbar_text_style"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="50dp"
+            android:text="Bilder, Videos, Links" />
+
+        <include
+            android:id="@+id/iconStep3"
+            layout="@layout/layout_finish_imageview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewleftbarStep4"
+            style="@style/newarticle_leftbar_text_style"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="50dp"
+            android:text="Zugehörige Artikel" />
+
+        <include
+            android:id="@+id/iconStep4"
+            layout="@layout/layout_finish_imageview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewleftbarStep5"
+            style="@style/newarticle_leftbar_text_style"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="50dp"
+            android:text="Filterkriterien" />
+
+        <include
+            android:id="@+id/iconStep5"
+            layout="@layout/layout_finish_imageview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewleftbarStep6"
+            style="@style/newarticle_leftbar_text_style"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="50dp"
+            android:text="Speichern / Veröffentlichen" />
+
+        <include
+            android:id="@+id/iconStep6"
+            layout="@layout/layout_finish_imageview" />
+    </LinearLayout>
+
+</LinearLayout>

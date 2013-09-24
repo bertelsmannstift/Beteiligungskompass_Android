@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="open_helper_classname">com.your.name.dao.DatabaseHelper</string>
+    <string name="sqlite_db_name">synced_database.sqlite</string>
+    <string name="temp_sqlite_db_name">tmp_synced_database.sqlite</string>
+
+</resources>

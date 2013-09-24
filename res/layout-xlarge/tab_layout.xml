@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dp"
+    android:background="@color/background_dark"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/tabDashboardLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/tab_selector"
+        android:onClick="onDashboardClicked"
+        android:orientation="vertical"
+        android:padding="@dimen/small_spacer" >
+
+        <ImageView
+            android:id="@+id/tabDashboardIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_tapbar_dashboard" />
+
+        <TextView
+            android:id="@+id/tabDashboardName"
+            style="@style/tabhost_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabPlanningLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/tab_selector"
+        android:onClick="onPlanningClicked"
+        android:orientation="vertical"
+        android:padding="@dimen/small_spacer" >
+
+        <ImageView
+            android:id="@+id/tabPlanIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_tapbar_planen" />
+
+        <TextView
+            android:id="@+id/tabPlanName"
+            style="@style/tabhost_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabArticleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/tab_selector"
+        android:onClick="onArticleClicked"
+        android:orientation="vertical"
+        android:padding="@dimen/small_spacer" >
+
+        <ImageView
+            android:id="@+id/tabArticleIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_tapbar_kategorie" />
+
+        <TextView
+            android:id="@+id/tabArticleName"
+            style="@style/tabhost_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabDataLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/tab_selector"
+        android:onClick="onFavoritClicked"
+        android:orientation="vertical"
+        android:padding="@dimen/small_spacer" >
+
+        <ImageView
+            android:id="@+id/tabDataIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_tapbar_meine_daten" />
+
+        <TextView
+            android:id="@+id/tabDataName"
+            style="@style/tabhost_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabContactLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/tab_selector"
+        android:onClick="onShareClicked"
+        android:orientation="vertical"
+        android:padding="@dimen/small_spacer" >
+
+        <ImageView
+            android:id="@+id/tabContactIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_tabbar_share" />
+
+        <TextView
+            android:id="@+id/tabContactName"
+            style="@style/tabhost_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

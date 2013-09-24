@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/layout_actionbar" />
+
+    <include
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tabLayout"
+        android:layout_below="@id/actionbar"
+        android:layout_marginTop="@dimen/small_spacer"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_spacer"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/navigationFragment"
+                android:name="com.your.name.fragments.dashboard.Navigation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer" />
+
+            <!--
+			<fragment
+                android:id="@+id/videoplayerFragment"
+                android:name="com.your.name.fragments.dashboard.VideoPlayer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacer" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/navigationbarFragment"
+        android:name="com.your.name.fragments.Navigationbar"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

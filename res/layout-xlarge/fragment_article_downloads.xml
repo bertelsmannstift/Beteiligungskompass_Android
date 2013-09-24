@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="15dp" >
+
+    <!-- TODO: replace with string from i18n -->
+
+    <TextView
+        style="@style/article_text_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Downloads" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="@dimen/small_spacer"
+        android:background="@drawable/article_text_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/downloadsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <include layout="@layout/vertical_spacer_medium" />
+
+</LinearLayout>

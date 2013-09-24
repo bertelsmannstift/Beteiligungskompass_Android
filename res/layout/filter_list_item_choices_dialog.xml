@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/choicesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="5dp"
+        android:descendantFocusability="beforeDescendants" />
+
+    <TextView
+        android:id="@+id/newCollectionText"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neue Sammlung:" />
+
+    <LinearLayout
+        android:id="@+id/newCollectionLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/addGroupNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_dark_highlighted"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="@dimen/small_spacer"
+            android:textColor="@color/text_on_background_dark" />
+
+        <TextView
+            android:id="@+id/addGroupButton"
+            style="@style/article_text_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/navigation_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/medium_spacer"
+            android:paddingRight="@dimen/medium_spacer"
+            android:text="+"
+            android:textColor="@color/text_on_background_dark" />
+    </LinearLayout>
+
+</LinearLayout>

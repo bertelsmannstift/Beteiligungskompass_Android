@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/prevArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:onClick="onPreviousImageClicked"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_arr_left" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/background_dark"
+        android:onClick="onNextImageClicked"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_arr_right" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/prevArrow"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

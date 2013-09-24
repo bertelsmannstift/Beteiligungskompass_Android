@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_content"
+    android:orientation="vertical"
+    android:padding="@dimen/small_spacer" >
+
+    <TextView
+        android:id="@+id/filterTitle"
+        style="@style/article_text_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/selectedOptionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Put the selected option here" />
+
+</LinearLayout>

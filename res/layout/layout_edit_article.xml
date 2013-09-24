@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/navigation_selector"
+        android:padding="5dp"
+        android:text="Artikel bearbeiten"
+        android:textColor="@android:color/white"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/navigation_selector"
+        android:padding="5dp"
+        android:text="Artikel löschen"
+        android:textColor="@android:color/white"
+        android:textSize="13dp" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/highlighted_background_interferer" />
+
+    <!--
+    	The two 0.1dp are needed as a workaround for this bug: 
+    	http://code.google.com/p/android/issues/detail?id=939
+    -->
+    <corners
+        android:bottomLeftRadius="0.1dp"
+        android:bottomRightRadius="0.1dp"
+        android:topLeftRadius="@dimen/medium_spacer"
+        android:topRightRadius="@dimen/medium_spacer" />
+
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+
+</shape>

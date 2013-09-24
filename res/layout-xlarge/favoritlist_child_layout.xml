@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:minHeight="150dp"
+    android:orientation="vertical"
+    android:padding="@dimen/small_spacer" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mapLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topFavoritLayout"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="14dp"
+            android:text="Sammlung:"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/favoritGroupLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topFavoritLayout"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/mapLabel"
+            android:orientation="vertical"
+            android:padding="@dimen/small_spacer" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectionLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/favoritGroupLayout"
+            android:background="@color/background_collection_text"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/selectGroupSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/background_collection_text"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/imageViewFavoritGroup"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@color/background_collection_text"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/icon_arr_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topFavoritLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_spacer" >
+
+            <ImageView
+                android:id="@+id/favoritImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_dpd_box" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_spacer"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/favoritTitle"
+                    style="@style/articlelist_child_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="@dimen/small_spacer"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="false"
+                    android:text="Article Title"
+                    android:textColor="@color/background_dark"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/indicatorLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/favoritTitle"
+                    android:orientation="horizontal" >
+
+                    <!-- The following item gets disabled programmatically for small devices, see ArticleList.java -->
+
+                    <ImageView
+                        android:id="@+id/favoritVideo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="@dimen/small_spacer"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_video" />
+
+                    <!-- The following item gets disabled programmatically for small devices, see ArticleList.java -->
+
+                    <ImageView
+                        android:id="@+id/favoritDownload"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="@dimen/medium_spacer"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_downloads" />
+
+                    <!-- The following item gets disabled programmatically for small devices, see ArticleList.java -->
+
+                    <ImageView
+                        android:id="@+id/favoritPin"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="@dimen/medium_spacer"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_location" />
+
+                    <TextView
+                        android:id="@+id/favoritSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_spacer"
+                        android:layout_marginRight="@dimen/small_spacer"
+                        android:layout_toRightOf="@+id/articlePin"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Article Subtitle"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/favoritDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/indicatorLayout"
+                    android:layout_marginRight="@dimen/small_spacer"
+                    android:ellipsize="end"
+                    android:lines="6"
+                    android:paddingBottom="@dimen/small_spacer"
+                    android:paddingTop="0dp"
+                    android:text="Article Description\nArticleDescription\nBLA"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+            <!--
+            <ImageView
+                android:id="@+id/articleMyArticle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/medium_spacer"
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:src="@drawable/icon_flag"
+                android:visibility="invisible" />
+            -->
+
+            <ImageView
+                android:id="@+id/articleFavorit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/medium_spacer"
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:src="@drawable/icon_fav_blue" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

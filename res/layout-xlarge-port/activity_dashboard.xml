@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/layout_actionbar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/actionbar"
+        android:layout_margin="@dimen/large_spacer"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <include
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tabLayout"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="@dimen/small_spacer" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/navigationFragment"
+                android:name="com.your.name.fragments.dashboard.Navigation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Do not remove these frame layouts. fragments can't take shape drawables as a background themselves -->
+      
+			<fragment
+                android:id="@+id/videoplayerFragment"
+                android:name="com.your.name.fragments.dashboard.VideoPlayer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+          
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white_rounded_corner_bottom" >
+
+                <fragment
+                    android:id="@+id/eventFragment"
+                    android:name="com.your.name.fragments.dashboard.News_Event_Section"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/small_spacer" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_content" >
+
+                <fragment
+                    android:id="@+id/partnerFragment"
+                    android:name="com.your.name.fragments.dashboard.Partner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacer" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/navigationbarFragment"
+        android:name="com.your.name.fragments.Navigationbar"
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

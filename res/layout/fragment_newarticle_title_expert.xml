@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/new_article_title_description" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertInstitution"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Institution" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertInstitution"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertFirstname"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Vorname" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertfirstname"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertLastname"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Nachname" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertLastname"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertaddress"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Adresse" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertaddress"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertPLZ"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Postleitzahl" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertPLZ"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertCity"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Stadt" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertCity"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertEmail"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="E-Mail" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertEmail"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertPhone"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Telefon" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertPhone"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewExpertFax"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Fax" />
+
+                <EditText
+                    android:id="@+id/NewArticleExpertFax"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/next_step_button" />
+
+</LinearLayout>

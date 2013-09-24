@@ -1,0 +1,21 @@
+{
+    "response": {
+        "module.about": "false",
+        "module.event": "true",
+        "module.eventbox": "true",
+        "module.videobox_newsbox_eventbox.mobile": "news_event",
+        "module.expert": "false",
+        "module.method": "true",
+        "module.news": "false",
+        "module.newsbox": "false",
+        "module.qa": "true",
+        "module.study": "true",
+        "module.videobox": "false",
+        "sort.event": "start_date",
+        "sort.expert": "lastname",
+        "sort.method": "title",
+        "sort.news": "date",
+        "sort.qa": "year",
+        "sort.study": "created"
+    }
+}

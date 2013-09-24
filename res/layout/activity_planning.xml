@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/layout_actionbar" />
+
+    <include
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_layout" />
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tabLayout"
+        android:layout_below="@+id/actionbar"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.your.name.fragments.Navigationbar"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

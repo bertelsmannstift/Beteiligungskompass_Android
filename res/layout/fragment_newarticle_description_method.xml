@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/new_article_title_description" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodAim"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Ziel/Wirkung" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodAim"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodInfo"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Hinweise zur Umsetzung" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodInfo"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodCost"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Kosten/Aufwand" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodCost"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodTimeExpense"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Aufwand Teilnehmer" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodTimeExpense"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodUsefulIf"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Sinnvoll einzusetzen, wenn" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodeUsefulIf"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodNotUsefulIf"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Nicht sinnvoll einzusetzen,wenn" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodNotUsefulIf"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodStrength"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Stärken" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodStrength"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodWeakness"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Schwächen" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodWeakness"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodOrigin"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Ursprung" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodOrigin"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodRights"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Nutzungsrechts" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodRights"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewMethodContact"
+                    style="@style/add_article_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Kontakt" />
+
+                <EditText
+                    android:id="@+id/NewArticleMethodContact"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/next_step_button" />
+
+</LinearLayout>

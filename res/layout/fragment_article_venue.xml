@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/article_text_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/small_spacer"
+        android:layout_marginTop="@dimen/small_spacer"
+        android:background="@drawable/article_text_divider_line" />
+
+    <TextView
+        android:id="@+id/eventVenue"
+        style="@style/article_venue_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eventAddress"
+        style="@style/article_venue_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autoLink="map"
+        android:text=""
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/googlemaps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/navigation_selector"
+        android:padding="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/addtocalendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation_selector"
+        android:padding="5dp"
+        android:textColor="@android:color/white" />
+
+    <include layout="@layout/vertical_spacer_medium" />
+
+    <LinearLayout
+        android:id="@+id/layoutMaxMember"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewMaxMember"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventMaxMember"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTeilnahmegebuehr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewTeilnahmeGebuehr"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventTeilnahemGebuehr"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewLink"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventLink"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDeadline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewDeadline"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventDeadline"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPartner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewPartner"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventPartner"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewEmail"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventEmail"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:autoLink="email"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTelefon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewTelefon"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventTelefon"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:autoLink="phone"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFax"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewFax"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventFax"
+            style="@style/article_text_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:autoLink="phone"
+            android:text=""
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <include layout="@layout/vertical_spacer_medium" />
+
+</LinearLayout>

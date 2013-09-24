@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/new_article_title_description" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Titel"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventTitle"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewStartDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Startdatum"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/eventStartDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minHeight="30dp"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEnddate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Enddatum"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/eventEndDateDisplay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:minHeight="30dp"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewCity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Stadt"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventCity"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewPlz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Postleitzahl"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventPLZ"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
+                    android:text="Straße"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventStreet"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text|textCapSentences"
+                    android:background="@drawable/edittext_round_corners"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewNr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
+                    android:text="Hnr"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventNr"
+                    style="@style/add_article_text_style"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewEventLocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Veranstaltungsort"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventLocation"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_spacer" >
+
+                <TextView
+                    android:id="@+id/textViewAuthor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Veranstalter"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/NewArticleEventAuthor"
+                    style="@style/add_article_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_round_corners"
+                    android:inputType="text|textCapSentences"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/next_step_button" />
+
+</LinearLayout>

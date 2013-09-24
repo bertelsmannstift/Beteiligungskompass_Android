@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/background_dark" >
+
+    <RelativeLayout
+        android:id="@+id/actionbarLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true" >
+
+        <RelativeLayout
+            android:id="@+id/navbarlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onNavbarClicked"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/navbar"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/small_spacer"
+                android:src="@drawable/icon_submenu"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/navbartext"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@color/background_interferer"
+                android:onClick="onNavbarClicked"
+                android:padding="@dimen/small_spacer"
+                android:text="Ergebnisse"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/navbarTitle"
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_spacer"
+            android:layout_toRightOf="@+id/navbarlayout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/small_spacer"
+            android:textColor="@color/text_on_background_dark"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/actionbarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/navbarTitle" >
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sync"
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:onClick="onSyncClicked"
+                android:padding="@dimen/small_spacer"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_sync"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/RightLayout"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/search"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/filter"
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="onFilterClicked"
+                    android:padding="@dimen/small_spacer"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_filter"
+                    android:visibility="gone" />
+
+                <!--
+				<TextView
+                    android:id="@+id/filterTextView"
+                    android:layout_toRightOf="@+id/filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/filterText"
+                    android:textColor="@color/background" />
+                -->
+
+                <ImageView
+                    android:id="@+id/sort"
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/filter"
+                    android:adjustViewBounds="true"
+                    android:onClick="onSortClicked"
+                    android:padding="@dimen/small_spacer"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_sort"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="stub" />
+
+    <style name="newarticle_leftbar_text_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">@color/background_linked_articles</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/background_dark</item>
+    </style>
+
+    <style name="Scroller">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/slider_back</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="add_article_text_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="navigation_style">
+        <item name="android:textColor">@color/text_on_background_dark</item>
+        <item name="android:background">@drawable/navigation_selector</item>
+        <item name="android:padding">@dimen/small_spacer</item>
+    </style>
+
+    <style name="tabhost_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="articlelist_group_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:padding">@dimen/small_spacer</item>
+    </style>
+
+    <style name="article_sidebar_title_style">
+        <item name="android:textColor">@color/background_dark</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:paddingTop">@dimen/small_spacer</item>
+        <item name="android:paddingLeft">@dimen/small_spacer</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingRight">@dimen/small_spacer</item>
+    </style>
+
+    <style name="article_sidebar_text_style">
+        <item name="android:textColor">@color/text_on_body</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="article_sidebar_pad_text_style">
+        <item name="android:textColor">@color/text_on_body</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="articlelist_child_style">
+        <item name="android:textColor">@color/text_on_body</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:paddingTop">@dimen/small_spacer</item>
+        <item name="android:paddingLeft">@dimen/small_spacer</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingRight">@dimen/small_spacer</item>
+    </style>
+
+    <style name="article_text_title_style">
+        <item name="android:textColor">@color/background_dark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="article_text_text_style">
+        <item name="android:textColor">@color/text_on_body</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="article_venue_text_style">
+        <item name="android:textColor">@color/text_on_body</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="login_text_style">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+</resources>

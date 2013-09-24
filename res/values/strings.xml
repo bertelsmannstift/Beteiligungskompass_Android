@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Add your platform name here -->
+    <string name="app_name">Your Platform name</string>
+    
+    <string name="strings_json">strings.json</string>
+    <string name="basic_config">basic_config.json</string>
+    
+    <!-- Enter the filenames for your static html files here (folder "assets")-->
+    <string name="termsHTML">terms.html</string>
+    <string name="grundlagenHTML">about.html</string>
+    <string name="initial_sync_version">initial_sync_version</string>    
+
+    <!-- Message texts, Info and contact information texts -->
+    <string name="dateSliderTitle">Selected date</string>
+    <string name="no_article_found">There were no articles found for your query.</string>
+    <string name="no_article_found_in_list">No matching articles found.</string>
+    <string name="termsOfConditions">Terms of conditions</string>
+    <string name="ourPartner">Partner:</string>
+    <string name="internet_for_images">To load the images, an active internet connection is required.</string>
+
+    <!-- Info and contact information texts -->
+    <string name="responsibleHeader">Responsible for the content of this app:</string>
+    <string name="responsible">Your company name and full address.</string>
+    <string name="contactHeader">Contact</string>
+    <string name="phone">Your phone number</string>
+    <string name="email">contact email address</string>
+    <string name="web">web address</string>
+
+</resources>

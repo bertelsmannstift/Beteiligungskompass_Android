@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/navigationItemlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/tab_selector"
+        android:clickable="true"
+        android:paddingLeft="2dp" >
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/small_spacer"
+            android:src="@drawable/icon_dpd_box" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/medium_spacer"
+            android:layout_toRightOf="@+id/itemImage"
+            android:padding="@dimen/small_spacer"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemName"
+            android:layout_toRightOf="@id/itemImage"
+            android:ellipsize="end"
+            android:lines="3"
+            android:padding="@dimen/small_spacer"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>
